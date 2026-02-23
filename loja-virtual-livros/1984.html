@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1984 - Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img id="product-img" src="img/1984.jpg" alt="Capa do livro 1984">
+            <div class="mini-gallery">
+                <img src="img/1984.jpg" onclick="changeImage(this.src)">
+            </div>
+        </div>
+        <div class="right">
+            <h1 id="product-title">1984</h1>
+            <div class="rating">☆☆☆☆☆ (2.565 avaliações)</div>
+            <div class="price">R$ 9,99</div>
+            <div class="description">
+                Autor: George Orwell<br>
+                Número de páginas: 416<br>
+                Idioma: Português<br>
+                Peso do produto: 502 gramas<br>
+                Editora: Companhia das Letras
+            </div>
+            <div class="buttons">
+                <button class="btn-cart" onclick="addToCart()">Adicionar ao Carrinho</button>
+                <button class="btn-buy" onclick="buyNow()">Comprar Agora</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function changeImage(src) {
+            document.getElementById('product-img').src = src;
+        }
+        function addToCart() {
+            alert("Produto adicionado ao carrinho!");
+        }
+        function buyNow() {
+            alert("Redirecionando para o pagamento...");
+        }
+    </script>
+</body>
+</html>
