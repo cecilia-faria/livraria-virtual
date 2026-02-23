@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Morro dos Ventos Uivantes - Livraria Virtual</title>
+    <link rel="stylesheet" href="../css/produto.css">
+</head>
+<body>
+
+    <a class="btn-voltar" href="../index.html">&#8592; Voltar ao Catálogo</a>
+
+    <div class="container">
+        <div class="left">
+            <img id="product-img" src="../img/o_morro_dos_ventos_uivantes.jpg" alt="Capa do livro O Morro dos Ventos Uivantes">
+            <div class="mini-gallery">
+                <img src="../img/o_morro_dos_ventos_uivantes.jpg" onclick="changeImage(this.src)" alt="O Morro dos Ventos Uivantes">
+                <img src="../img/o_morro_dos_ventos_uivantes_verso.jpg.png" onclick="changeImage(this.src)" alt="O Morro dos Ventos Uivantes verso">
+            </div>
+        </div>
+        <div class="right">
+            <h1>O Morro dos Ventos Uivantes</h1>
+            <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; (2.197) avaliações</div>
+            <div class="price">R$ 15,90</div>
+            <div class="description">
+                Autor: Emily Brontë<br>
+                Número de páginas: 336<br>
+                Idioma: Português<br>
+                Peso do produto: 380 gramas<br>
+                Editora: Penguin
+            </div>
+            <div class="buttons">
+                <button class="btn-cart" onclick="addToCart()">Adicionar ao Carrinho</button>
+                <button class="btn-buy" onclick="buyNow()">Comprar Agora</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/produto.js"></script>
+</body>
+</html>

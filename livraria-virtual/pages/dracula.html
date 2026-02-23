@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drácula - Livraria Virtual</title>
+    <link rel="stylesheet" href="../css/produto.css">
+</head>
+<body>
+
+    <a class="btn-voltar" href="../index.html">&#8592; Voltar ao Catálogo</a>
+
+    <div class="container">
+        <div class="left">
+            <img id="product-img" src="../img/dracula.jpg" alt="Capa do livro Drácula">
+            <div class="mini-gallery">
+                <img src="../img/dracula.jpg" onclick="changeImage(this.src)" alt="Drácula">
+                <img src="../img/dracula_lateral.png" onclick="changeImage(this.src)" alt="Drácula verso">
+            </div>
+        </div>
+        <div class="right">
+            <h1>Drácula</h1>
+            <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; (2.565) avaliações</div>
+            <div class="price">R$ 20,00</div>
+            <div class="description">
+                Autor: Bram Stoker<br>
+                Número de páginas: 434<br>
+                Idioma: Português<br>
+                Peso do produto: 370 gramas<br>
+                Editora: Pé da Letra
+            </div>
+            <div class="buttons">
+                <button class="btn-cart" onclick="addToCart()">Adicionar ao Carrinho</button>
+                <button class="btn-buy" onclick="buyNow()">Comprar Agora</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/produto.js"></script>
+</body>
+</html>

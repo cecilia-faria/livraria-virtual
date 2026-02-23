@@ -1,0 +1,154 @@
+/* ===========================
+   Estilos da Página de Produto
+=========================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 20px auto;
+    background: #fae1d9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Lado esquerdo - Imagem */
+.left {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.left img:hover {
+    transform: scale(1.05);
+}
+
+.mini-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.mini-gallery img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: border 0.2s;
+}
+
+.mini-gallery img:hover {
+    border: 2px solid #ffa41c;
+}
+
+/* Lado direito - Informações */
+.right {
+    flex: 2;
+    min-width: 300px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #f39c12;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8e3d8e;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin: 15px 20px;
+    padding: 8px 16px;
+    background-color: #e8b3e8;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-voltar:hover {
+    background-color: #8e3d8e;
+    color: white;
+}
+
+/* Botões de ação */
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.buttons button {
+    flex: 1;
+    min-width: 140px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-cart {
+    background: #e8b3e8;
+}
+
+.btn-cart:hover {
+    background: #8e3d8e;
+    color: white;
+}
+
+.btn-buy {
+    background: #8e3d8e;
+    color: white;
+}
+
+.btn-buy:hover {
+    background: #b05ab0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .left {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+}
